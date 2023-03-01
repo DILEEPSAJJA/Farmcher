@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    margin-top : 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: cover;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #fff;
+}
+
+/*------ footer ------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    width: 100%;
+    margin-left: 0px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyrigth{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url('https://assets.bonappetit.com/photos/5d4356426f98a40008987829/16:9/w_2560%2Cc_limit/Basically-Cherry-Tomatoes.jpg ');
+  color: white;
+  background-size: cover;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navba {
+  overflow: hidden;
+  background-color: #c0bbbb;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navba a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navba a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navba a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navba a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.rows {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .rows {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navba a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header" style="color: #000;">
+  <h1>CHERRY TOMATO</h1>
+  <p>A <b>healthy</b> Vegetable grow in form.</p>
+</div>
+
+<div class="navba">
+  <a href="Website3.html" class="active">Home</a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#" class="right"></a>
+</div>
+
+<div class="rows">
+  <div class="side">
+    <h2>About cherry Tomato</h2>
+    
+    <p>small, round tomatoes that are usually red, but can also be yellow, orange, or even green. They are sweet and juicy, and are often used in salads and as a garnish.</p>
+    <h4>AVG PRICE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<span> &nbsp;Rs 30/250grams</span></h4>
+    
+    <h4>SEASON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span>  Summer</span></h4>
+    <h4>SOIL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span> Heavy Clay soil </span></h4>
+    </div>
+  <div class="main">
+    
+    <h4>They are generally sweeter than other types of tomatoes, which can make them a good choice for salads and other dishes where you want a burst of flavor.
+        Cherry tomatoes are also high in vitamins C and A, as well as antioxidants and other nutrients..</h4>
+    
+    <br>
+    <h2>Grows </h2> 
+    <audio controls>
+        <source src="image/audio/CHERRY TOMATO.mp3" type="audio/mpeg">
+    </audio>
+    <p>Growing cherry tomatoes is relatively easy and can be done either in a garden or in a container on a patio or balcony. Here are the basic steps to grow cherry tomatoes:
+
+        Choose a location: Cherry tomatoes need full sun, so choose a location that receives at least six hours of direct sunlight per day. If you're growing them in a container, make sure the container is large enough to accommodate the plant and has good drainage.
+        
+        Prepare the soil: Cherry tomatoes grow best in well-draining soil that is rich in organic matter. If you're planting them in a garden, work some compost or other organic matter into the soil before planting.
+        
+        Plant the seeds or seedlings: You can start cherry tomato seeds indoors about six weeks before the last frost, or you can purchase seedlings from a garden center. If planting in a garden, space the seedlings about 2-3 feet apart. If planting in a container, use a good quality potting mix and plant one seedling per container.
+        <br><br>
+        Water regularly: Cherry tomatoes need regular watering, especially during dry periods. Water deeply, making sure the soil is evenly moist but not waterlogged.
+        <br><br>
+        Fertilize: Cherry tomatoes benefit from regular fertilization, either with a balanced fertilizer or with a fertilizer that is higher in phosphorus to promote fruit production.
+        <br><br>
+        Prune and support the plants: As the cherry tomato plants grow, they will need support to keep them from falling over. You can use stakes or cages to support the plants. Prune off any suckers (the small shoots that grow between the stem and the main branches) to help the plant focus its energy on fruit production.
+        <br><br>
+        Harvest the tomatoes: Cherry tomatoes will be ready to harvest when they are fully colored and slightly soft to the touch. Simply twist or snip the tomatoes off the plant, and enjoy!
+        <br><br>
+        With a little bit of care and attention, you can grow your own delicious cherry tomatoes at home
+        <br><br>
+   </p>
+
+  </div>
+</div>
+
+<!----------------------- Footer ------------------------->
+
+<div class="footer" style="background: #000;">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/logo.png">
+                <p>Our Purpose Is To Sustainably Maake The Pleasure Android 
+                    Benfits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrigth">Copyrigth 2023 - Farmcher Website .</p>
+    </div>
+</div>
+
+
+</body>
+</html>

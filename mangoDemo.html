@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    margin-top : 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: cover;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #fff;
+}
+
+/*------ footer ------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    width: 100%;
+    margin-left: 0px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyrigth{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfrmJCNS0uJ7fRA_dv937g8Ji1a7kCc7pbKQ&usqp=CAU');
+  color: white;
+  background-size: cover;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navba {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navba a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navba a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navba a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navba a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.rows {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .rows {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navba a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ALPHONSO MANGO</h1>
+  <p>A <b>seasonal</b> Fruit grown in summer.</p>
+</div>
+
+<div class="navba">
+  <a href="Website3.html" class="active">Home</a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#" class="right"></a>
+</div>
+
+<div class="rows">
+  <div class="side">
+    <h2>About alphonso mango</h2>
+    
+    <p>Mango trees grow to 30–40 metres (98–131 feet) tall, with a crown radius of 10–15 m (33–49 ft).</p>
+    <h4>AVG PRICE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<span> &nbsp;10794.00 INR/Quintal</span></h4>
+    <h4>Costliest Market Price  : <span> 35000.00 INR/Quintal</span></h4>
+    <h4>SEASON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span>  April - June</span></h4>
+    <h4>SOIL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span>  The pH of the soil should be &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; between 6.0 and 7.5</span></h4>
+    </div>
+  <div class="main">
+    
+    <h4>Alphonso: Known as the "king of mangoes," this variety is sweet and aromatic, and is grown mainly in India.</h4>
+    
+    <br>
+    <h2>Grows </h2> 
+    <audio controls>
+        <source src="image/audio/alhonso.mp3" type="audio/mpeg">
+    </audio>
+    <p>
+        If you live in a region with a suitable climate, you may be able to grow Alphonso mangoes in your backyard. Here are the general steps to grow Alphonso mangoes:<br><br>
+
+Choose a suitable location: Alphonso mangoes require a warm and humid climate with plenty of sunlight. They prefer well-draining soil with a pH level between 5.5 and 7.5. Choose a location that receives plenty of sunlight and is protected from strong winds.<br><br>
+
+Plant the tree: Plant the Alphonso mango tree during the spring season. Dig a hole that is slightly larger than the root ball of the sapling and plant it in the hole. Backfill with soil and water the tree thoroughly.<br><br>
+
+Water and fertilize: Alphonso mango trees require regular watering, especially during the first two years after planting. Fertilize the tree every 2-3 months with a balanced fertilizer that contains nitrogen, phosphorus, and potassium.<br><br>
+
+Prune the tree: Prune the tree during the winter season to remove any dead or diseased branches. This will help to improve the overall health and shape of the <br><br>
+
+Harvest the mangoes: Alphonso mangoes typically ripen between April and June. Wait until the mangoes are fully ripe before harvesting them. This will ensure that they are sweet and flavorful.<br><br>
+
+Keep in mind that growing Alphonso mangoes requires a lot of care and attention, and it may take several years before the tree begins to bear fruit. However, if you are patient and diligent in caring for the tree, you may be able to enjoy delicious Alphonso mangoes from your own backyard.<br><br>
+    </p>
+
+  </div>
+</div>
+
+<!----------------------- Footer ------------------------->
+
+<div class="footer" style="background: #000;">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/logo.png">
+                <p>Our Purpose Is To Sustainably Maake The Pleasure Android 
+                    Benfits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrigth">Copyrigth 2023 - Farmcher Website .</p>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    margin-top : 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: cover;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #fff;
+}
+
+/*------ footer ------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    width: 100%;
+    margin-left: 0px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyrigth{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url('https://agfstorage.blob.core.windows.net/misc/FP_com/2020/10/06/HazelMAngoes1.jpg');
+  color: white;
+  background-size: cover;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navba {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navba a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navba a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navba a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navba a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.rows {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .rows {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navba a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>KENT MANGO</h1>
+  <p>A <b>seasonal</b> Fruit grown in summer.</p>
+</div>
+
+<div class="navba">
+  <a href="website3.html" class="active">Home</a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#" class="right"></a>
+</div>
+
+<div class="rows">
+  <div class="side">
+    <h2>About Kent mango</h2>
+    
+    <p>Mango trees grow to 30–40 metres (98–131 feet) tall, with a crown radius of 10–15 m (33–49 ft).</p>
+    <h4>AVG PRICE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<span> &nbsp;Rs 2-3 lakhs /kilogram</span></h4>
+    
+    <h4>SEASON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span>  Mid jan - March</span></h4>
+    <h4>SOIL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span> Loamy, alluvial, well drained, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aerated,compost, well-rotted &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; manure,or leaf mold.</span></h4>
+    </div>
+  <div class="main">
+    
+    <h4>Kent mangoes require a warm and humid climate to thrive. They grow best in tropical or subtropical regions, with temperatures ranging from 20-35°C (68-95°F) and an average annual rainfall of 1000-1500 mm. They do not tolerate frost.
+
+    </h4>
+    
+    <br>
+    <h2>Grows </h2> 
+    <audio controls>
+        <source src="image/audio/kent.mp3" type="audio/mpeg">
+    </audio>
+    <p>
+
+        Growing Kent mangoes can be a rewarding experience, but it requires some patience and care. If you are unsure about the specific requirements for growing Kent mangoes in your area, consult with a local expert or agricultural extension service for more information.
+        <br><br>
+        Climate: Kent mangoes require a warm and humid climate to thrive. They grow best in tropical or subtropical regions, with temperatures ranging from 20-35°C (68-95°F) and an average annual rainfall of 1000-1500 mm. They do not tolerate frost.
+
+        <br><br>
+        Soil: Kent mangoes grow well in well-drained soils that are rich in organic matter, with a pH between 6.0 and 7.5. They can also tolerate sandy soils, but do not grow well in heavy clay soils.
+
+        <br><br>
+        Propagation: Kent mangoes can be propagated from seed, but it is recommended to use grafted plants as they are more likely to produce high-quality fruit. Grafted plants are usually available from nurseries.
+        <br><br>
+        Planting: Kent mangoes should be planted in a sunny location, away from other trees or structures that may shade them. Dig a hole that is twice as wide and deep as the root ball, and backfill with a mixture of soil and organic matter.
+
+        <br><br>
+        Care: Kent mangoes require regular watering, especially during dry periods. Fertilize with a balanced fertilizer once or twice a year, and prune regularly to maintain the shape of the tree and promote fruiting.
+
+
+        <br><br>
+        Harvest: Kent mangoes are typically ready for harvest between March and September, depending on the location and climate. The fruit should be picked when fully ripe but still firm, and stored at room temperature until they are fully ripe and ready to eat.
+ 
+        <br><br>
+   </p>
+
+  </div>
+</div>
+
+<!----------------------- Footer ------------------------->
+
+<div class="footer" style="background: #000;">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/logo.png">
+                <p>Our Purpose Is To Sustainably Maake The Pleasure Android 
+                    Benfits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrigth">Copyrigth 2023 - Farmcher Website .</p>
+    </div>
+</div>
+
+
+</body>
+</html>
